@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <link rel="stylesheet" href="estiloform.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" width="480" height="480" src="lambari.png" alt="Logo da revista">
+        <nav class="menu">
+            <a  class="item" href="formulário.html">Criar Conta</a>
+            <a class="item" href="novosartistas.html">Novos artistas</a>
+            <a class="item" href="eventos.html">Eventos</a>
+            <a class="item"href="landing.html">Destaque do dia</a>
+        </nav>
+        <br>
+    <!--tag form indica onde começará o formulário-->
+    <form id="form" class="form">
+        <!--tag fieldset utilizado para separar campos-->
+        <fieldset>
+            <h1>Criar conta</h1>
+            <br>
+            <div>
+                <label>Nome</label>
+                <input type="text" nome="nome" id="nome">
+            </div>
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" nome="sobrenome" id="sobrenome">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" nome="email" id="email">
+            </div>
+            <div>
+                <label>Senha</label>
+                <input type="password" nome="password" id="password">
+            </div>
+            <div>
+                <label>Confirme sua Senha</label>
+                <input type="password" nome="password1" id="password1">
+            </div>
+            <div>
+                <label>Idade</label>
+                <input type="number" nome="idade" id="idade">
+            </div>
+            <br>
+        </fieldset>
+        <br>
+        <div>
+            <label>Com qual genêro você se indentifica?</label>
+            <br>
+            <select id="genero">
+                <option selected disabled value="">Selecione</option>
+                <option> Feminino</option>
+                <option> Masculino</option>
+                <option>Outro</option>
+            </select>
+        </div>
+        <fieldset>
+            <label>Selecione os estilos musicais que você prefere</label>
+            <br>
+            <input type="checkbox" name="music" id="music" value="Rock">
+            <label for="music">Rock</label>
+            <input type="checkbox" name="music1" id="music1" value="Reggae">
+            <label for="music1">Reggae</label>
+            <input type="checkbox" name="music2" id="music2" value="Sertanejo">
+            <label for="music2">Sertanejo</label>
+            <input type="checkbox" name="music3" id="music3" value="Funk">
+            <label for="music3">Funk</label>
+            <br>
+            <input type="checkbox" name="music4" id="music4" value="Lo Fi">
+            <label for="music4">Lo Fi</label>
+            <input type="checkbox" name="music5" id="music5" value="Jazz">
+            <label for="music5">Jazz</label>
+            <input type="checkbox" name="music6" id="music6" value="Pop">
+            <label for="music6">Pop</label>
+            <input type="checkbox" name="music7" id="music7" value="Gospel">
+            <label for="music7">Gospel</label>
+        </fieldset>
+        <br>
+        <div>
+            <label>Conte um pouco da sua paixão por música</label>
+            <br>
+            <textarea name="experiência" id="experiência" style="width:26em" rows="10"></textarea>
+        </div>
+        <button onclick="validar()" type="submit">Concluído</button>
+
+    </form>
+    <script>
+        //variaveis
+        function validar(){
+    var nome=document.getElementById("nome");
+    var sobrenome=document.getElementById("sobrenome");
+    var email=document.getElementById("email");
+    var password=document.getElementById("password");
+    var password1=document.getElementById("password1");
+    var idade=document.getElementById("idade");
+    //verificar nome
+    if (nome.value == "") {
+        alert("Nome não informado");
+    
+        nome.focus();
+        return;
+      }
+     //verificar sobrenome 
+    if (sobrenome.value == "") {
+        alert("sobrenome não informado");
+    
+        sobrenome.focus();
+        return;
+      }
+      //verificar email
+    if (email.value== "") {
+        alert("Email não informado");
+    
+        email.focus();
+        return;
+      }
+      // verificar se a senha é igual a senha confirmada
+    if(password.value!=password1.value || password.value==""||password1.value==""){
+        alert("Senha inválida")
+        password.focus() && password1.focus()
+        return;
+    }
+     //verificar se o usuário tem mais de 14 anos
+    if(idade.value<=14){
+        alert("Cadastro não autorizado para menores de idade");
+        idade.focus()
+        return;
+    }
+    //se o cadastro foi preenchido corretamente, retorna a mensagem abaixo 
+    else{
+        alert("Cadastro concluído")
+    }
+}
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100;
+    background: -webkit-radial-gradient(rgb(252, 148, 42), rgb(31, 33, 15));
+    background: radial-gradient(rgb(252, 148, 42), rgb(31, 33, 15));
+
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24;
+}
+.logo{
+    height: 100px;
+}
+.menu{
+    display: flex;
+    gap: 32px;
+}
+.item{    
+    font-family: 'Open Sans', sans-serif;
+    color: #fff2e7;
+    font-weight: 400;
+    font-size: 18px;
+}
+.paragrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff2e7;
+}
+.conteudo{
+    border-top: 0.4px solid #fff2e7;
+    margin-bottom: 48px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff2e7;
+    font-weight: 400;
+    font-size: 18px;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.principaltitulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: #fff2e7;
+    text-align: center;
+
+}
+.principalbotao{
+    background-color: #ECD6C4;
+    width: 80px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-size: 12px;
+    font-family:'Open Sans', sans-serif;
+}
+.principalbotao:hover{
+    background-color: rgba(236,190, 42, 0.25);
+    font-family: 'Open Sans', sans-serif;
+    color: #fff2e7;
+
+}
+/*centralização da tabela */
+.tabela{
+    margin: auto;
+}

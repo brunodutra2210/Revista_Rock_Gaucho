@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+/* Propriedades da página*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*Propriedades do corpo da página */
+body{
+    font-size: 100;
+    background: -webkit-radial-gradient(rgb(252, 148, 42), rgb(31, 33, 15));
+    background: radial-gradient(rgb(252, 148, 42), rgb(31, 33, 15));
+
+}
+/*propriedadas do cabeçalho */
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24;
+}
+/* imagem da logo*/
+.logo{
+    height: 100px;
+}
+/*posição do menu */
+.menu{
+    display: flex;
+    gap: 32px;
+}
+/*itens do menu */
+.item{    
+    font-family: 'Open Sans', sans-serif;
+    color: #fff2e7;
+    font-weight: 400;
+    font-size: 18px;
+}
+/* parágrafo da matéria principal */
+.paragrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff2e7;
+}
+/* propriedades do conteudo */
+.conteudo{
+    border-top: 0.4px solid #fff2e7;
+    margin-bottom: 48px;
+}
+/*estilo da principal sessão */
+.principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.materia{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+/*estilo do título */
+.principaltitulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: #fff2e7;
+}
+/*estilo botão */
+.principalbotao{
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-size: 12px;
+    font-family:'Open Sans', sans-serif;
+}
+/*efeito no botão */
+.principalbotao:hover{
+    background-color: rgba(236,190, 42, 0.25);
+
+}
